@@ -1,0 +1,87 @@
+<!-- 1. Tiêu đề trang -->
+<h3 class="text-center">TRANG XEM CHI TIẾT</h3>
+
+<!-- 2. Form nhập liệu -->
+<form>
+    <!-- Khu vực id -->
+    <div class="mt-3">
+        <span class="form-label">ID:</span>
+        <input class="form-control" type="text" ng-model="product.id" disabled>
+    </div>
+
+    <!-- Khu vực tên -->
+    <div class="mt-3">
+        <span class="form-label">Tên:</span>
+        <input class="form-control" type="text" ng-model="product.ten" disabled>
+    </div>
+
+    <!-- Khu vực ảnh -->
+    <div class="mt-3">
+        <span class="form-label">Ảnh:</span>
+        <input class="form-control" type="text" ng-model="product.anh" disabled>
+    </div>
+
+    <!-- Khu vực ảnh -->
+    <div class="mt-3">
+        <span class="form-label">Giá:</span>
+        <input class="form-control" type="text" ng-model="product.gia" disabled>
+    </div>
+
+    <!-- Khu vực danh mục -->
+    <div class="mt-3">
+        <span class="form-label">Danh mục:</span>
+        <select class="form-control" ng-model="product.tenDanhMuc" disabled>
+            <option value="">- Lựa chọn -</option>
+            <option value="DM01">Áo sơ mi</option>
+            <option value="DM02">Áo phông</option>
+            <option value="DM03">Quần</option>
+        </select>
+    </div>
+
+
+    <!-- Khu vực button submit -->
+    <div class="mt-3 text-center">
+        <a href="#!/dssp" class="btn btn-secondary">Quay Lại</a>
+        <a href="#!sanpham/edit/{{product.id}}" class="btn btn-warning">Chỉnh Sửa</a>
+        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#myModal">Xóa</button>
+    </div>
+
+    <!-- Khu vực thông báo lỗi -->
+    <div class="alert alert-danger mt-3" ng-if="validateForm.trangThai === false">
+        <strong>Form không hợp lệ!</strong>
+        <br>
+        {{validateForm.noiDung}}
+    </div>
+
+
+    <!-- Khu vực modal xác nhận xóa -->
+    <!-- 1. Đổi sự kiện button Open modal sang button xóa -->
+    <!-- 2. Đổi nội dung modal -->
+  
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+    
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Xác nhận xóa</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+    
+                <!-- Modal body -->
+                <div class="modal-body">
+                    Bạn có chắc chắn muốn xóa <strong>"{{product.ten}}"</strong> không?
+                </div>
+    
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                    <button class="btn btn-danger" ng-click="onClickButtonXacNhanXoa()">Xác nhận xóa</button>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+
+</form>

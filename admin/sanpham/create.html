@@ -1,0 +1,54 @@
+<!-- 1. Tiêu đề trang -->
+<h3 class="text-center">TRANG TẠO MỚI</h3>
+
+<!-- 2. Form nhập liệu -->
+<form>
+    <!-- Khu vực id -->
+    <div class="mt-3">
+        <span class="form-label">ID:</span>
+        <input class="form-control" type="text" ng-model="product.id">
+    </div>
+
+    <!-- Khu vực tên -->
+    <div class="mt-3">
+        <span class="form-label">Tên:</span>
+        <input class="form-control" type="text" ng-model="product.ten">
+    </div>
+
+    <!-- Khu vực ảnh -->
+    <div class="mt-3">
+        <span class="form-label">Ảnh:</span>
+        <input class="form-control" type="text" ng-model="product.anh">
+    </div>
+
+    <!-- Khu vực giá -->
+    <div class="mt-3">
+        <span class="form-label">Giá:</span>
+        <input class="form-control" type="number" ng-model="product.gia">
+    </div>
+
+    <!-- Khu vực danh mục -->
+    <div class="mt-3">
+        <span class="form-label">Danh mục:</span>
+        <select class="form-control" ng-model="product.tenDanhMuc">
+            <option value="">- Lựa chọn -</option>
+            <option value="DM01">Áo sơ mi</option>
+            <option value="DM02">Áo phông</option>
+            <option value="DM03">Quần Short</option>
+        </select>
+    </div>
+
+
+    <!-- Khu vực button submit -->
+    <div class="mt-3 text-center">
+        <button class="btn btn-success" ng-click="onClickSubmit()">Tạo mới</button>
+    </div>
+
+    <!-- Khu vực thông báo lỗi -->
+    <div class="alert alert-danger mt-3" ng-if="validateForm.trangThai === false">
+        <strong>Form không hợp lệ!</strong> 
+        <br>
+        {{validateForm.noiDung}}
+    </div>
+
+</form>

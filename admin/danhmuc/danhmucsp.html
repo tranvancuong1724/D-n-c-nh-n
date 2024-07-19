@@ -1,0 +1,40 @@
+<body ng-app="myApp">
+    <div class="d-flex">
+
+        <div class="" style="width: calc(100% - 300px);" ng-controller="danhMucProductCtrl">
+            <div class="container mt-3">
+
+                <h3 class="text-center">DANH MỤC</h3>
+
+                <div class="text-end">
+                    <a href="#!/danhmuc/create" class=" btn btn-success">Tạo mới danh mục</a>
+                </div>
+
+                <table class="table table-bordered mt-3">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Danh mục</th>
+                            <th>Tương tác</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="item in danhSachDanhMuc track by $index">
+                            <td>{{item.id}}</td>
+                            <td>{{item.ten}}</td>
+
+                            <td style="width: 1px;" class="text-nowrap">
+                                <a href="#!/danhmuc/edit/{{item.id}}" class="btn btn-warning btn-sm">Sửa</a>
+                                <button class="btn btn-danger btn-sm" ng-click="xoaSanPham(item.id)">Xóa</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

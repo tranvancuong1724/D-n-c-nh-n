@@ -1,0 +1,45 @@
+<div class="container mt-4" style="min-height: calc(100vh - 490px); ">
+    <div class="container d-flex justify-content-around mt-3">
+        <!-- Thông tin -->
+        <div class="">
+            <h3 class="text-center">Thông tin giao hàng</h3>
+            <form>
+                <div class="mb-3">
+                    <input class="form-control" type="text" placeholder="Họ và tên" ng-model="donHang.tenKH">
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                    <input class="form-control" type="email" placeholder="Email" ng-model="donHang.email">
+                    <input class="form-control ms-2" type="text" placeholder="Số điện thoại" ng-model="donHang.sdt">
+                </div>
+                <div class="mb-3">
+                    <input class="form-control mb-3" type="text" placeholder="Địa chỉ" name="diachi" ng-model="donHang.diaChi">
+                    <textarea name="ghichu" class="form-control" id="" cols="30" rows="10" placeholder="Ghi chú" ng-model="donHang.ghiChu"></textarea>
+                    <a href="#!/view/gioHang" class="btn text-danger"><b>Quay lại giỏ hàng</b></a>
+                </div>
+            </form>
+        </div>
+        <div class="container shadow" style="width: 340px;">
+            <div class="border-bottom d-flex justify-content-between">
+                <div class="d-flex align-items-center justify-content-center" style="height: 260px;">
+                    <img style="width: 160px; height: 220px;" ng-src="{{gioHang.anh}}" alt="">
+                </div>
+                <div class="mt-5">
+                    <input type="text" class="btn border-0" disabled ng-model="gioHang.ten">
+                </div>
+            </div>
+            <div class="d-flex justify-content-start">
+                <p>Số lượng :</p>
+                <input type="text" class="btn border-0" disabled ng-model="gioHang.soLuong">
+            </div>
+            <div class="d-flex justify-content-start">
+                <p>Giá :</p>
+                <input type="text" class="btn border-0" ng-model="gioHang.gia" disabled>
+            </div>
+            <div class="d-flex justify-content-between">
+                <p>Tổng Tiền:</p>
+                <input class="btn border-0" type="text" ng-model="donHang.tongTien = gioHang.gia * gioHang.soLuong" disabled>
+            </div>
+            <button class="btn btn-primary" ng-click="onClickSubmit()">Hoàn tất đơn hàng</button>
+        </div>
+    </div>
+</div>

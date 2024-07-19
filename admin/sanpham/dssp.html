@@ -1,0 +1,55 @@
+
+<body ng-app="myApp">
+    <div class="d-flex">        
+        <div class="" style="width: calc(100% - 300px);" ng-controller="dsspProductCtrl">
+            <div class="container mt-3">
+
+                <h3 class="text-center">DANH SÁCH SẢN PHẨM</h3>
+
+                <div class="d-flex justify-content-between mt-5">
+                    <input class="rounded" type="search" value="Thanh tìm kiếm" style="border: 1px solid rgb(136, 136, 136);" ng-model="tim">
+                    <a href="#!sanpham/create" class="btn btn-success">Tạo mới sản phẩm</a>
+                </div>
+                <table class="table table-bordered mt-3">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Ảnh</th>
+                            <th>Tên sản phẩm</th>
+                            <th>Danh mục</th>
+                            <th>Giá</th>
+                            <th>Tương tác</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="item in danhSachSanPham | filter: {ten: tim}">
+                            <td>{{item.id}}</td>
+                            <td>
+
+                                <div style="height: 60px; width: 60px;" class="border rounded bg-light overflow-hidden 
+                    d-flex justify-content-center align-items-center">
+                                    <img class="mh-100 mw-100" ng-src="{{item.anh}}" alt="">
+                                </div>
+                            </td>
+                            <td>{{item.ten}}</td>
+                            <td>{{item.tenDanhMuc}}</td>
+                            <td>
+                                {{item.gia}}
+                            </td>
+                            <td style="width: 1px;" class="text-nowrap">
+                                <a href="#!sanpham/detail/{{item.id}}" class="btn btn-primary btn-sm">Xem</a>
+                                <a href="#!sanpham/edit/{{item.id}}" class="btn btn-warning btn-sm">Sửa</a>
+                                <button class="btn btn-danger btn-sm" ng-click="xoaSanPham(item.id)">Xóa</button>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,240 @@
+{
+  "danh-muc": [
+    {
+      "id": "DM01",
+      "ten": "Áo sơ mi"
+    },
+    {
+      "id": "DM02",
+      "ten": "Áo phông"
+    },
+    {
+      "id": "DM03",
+      "ten": "Quần Short"
+    }
+  ],
+  "san-pham": [
+    {
+      "id": "SP01",
+      "ten": "Áo sơ mi",
+      "anh": "/img/áo sơ mi 2.jpeg",
+      "gia": "100000",
+      "tenDanhMuc": "DM01"
+    },
+    {
+      "id": "SP06",
+      "ten": "Áo sơ mi 02",
+      "anh": "/img/20220614_pITz9mIphZVmIyrEYkVnfAyb.jpg",
+      "gia": "200000",
+      "tenDanhMuc": "DM01"
+    },
+    {
+      "id": "SP07",
+      "ten": "Áo sơ mi 03",
+      "anh": "/img/20220729_5V0NFyCL73Xo2hy3NBjCizaZ.jpg",
+      "gia": "250000",
+      "tenDanhMuc": "DM01"
+    },
+    {
+      "id": "SP08",
+      "ten": "Áo sơ mi 04",
+      "anh": "/img/20220801_FvKjgA03jkrqqTeQsdxImDWW.jpg",
+      "gia": "299000",
+      "tenDanhMuc": "DM01"
+    },
+    {
+      "id": "SP09",
+      "ten": "Áo sơ mi 05",
+      "anh": "/img/20220912_RfMbeKsbALtVWmgotmriPOoy.jpg",
+      "gia": "299000",
+      "tenDanhMuc": "DM01"
+    },
+    {
+      "id": "SP010",
+      "ten": "Áo sơ mi 06",
+      "anh": "/img/20220917_NTcrvMun5BSgAdo8BbxPLXMo.jpg",
+      "gia": "299000",
+      "tenDanhMuc": "DM01"
+    },
+    {
+      "id": "SP011",
+      "ten": "Áo sơ mi 07",
+      "anh": "/img/20230109_inxjCwHOXXONx8ce.jpg",
+      "gia": "299000",
+      "tenDanhMuc": "DM01"
+    },
+    {
+      "id": "SP012",
+      "ten": "Áo sơ mi 08",
+      "anh": "/img/20230224_4Ba4buYw7WYszKME.jpeg",
+      "gia": "299000",
+      "tenDanhMuc": "DM01"
+    },
+    {
+      "id": "SP02",
+      "ten": "Áo phông",
+      "anh": "/img/aophong1.jpeg",
+      "gia": "299000",
+      "tenDanhMuc": "DM02"
+    },
+    {
+      "id": "SP013",
+      "ten": "Áo phông 02",
+      "anh": "/img/áo phông.jpeg",
+      "gia": "399000",
+      "tenDanhMuc": "DM02"
+    },
+    {
+      "id": "SP014",
+      "ten": "Áo phông 03",
+      "anh": "/img/aophong2.jpeg",
+      "gia": "250000",
+      "tenDanhMuc": "DM02"
+    },
+    {
+      "id": "SP015",
+      "ten": "Áo phông 04",
+      "anh": "/img/aophong3.jpeg",
+      "gia": "199000",
+      "tenDanhMuc": "DM02"
+    },
+    {
+      "id": "SP016",
+      "ten": "Áo phông 05",
+      "anh": "/img/aophong5.jpeg",
+      "gia": "299000",
+      "tenDanhMuc": "DM02"
+    },
+    {
+      "id": "SP017",
+      "ten": "Áo phông 06",
+      "anh": "/img/aophong6.jpeg",
+      "gia": "199000",
+      "tenDanhMuc": "DM02"
+    },
+    {
+      "id": "SP018",
+      "ten": "Áo phông 07",
+      "anh": "/img/aophong7.jpeg",
+      "gia": "299000",
+      "tenDanhMuc": "DM02"
+    },
+    {
+      "id": "SP03",
+      "ten": "Quần Short",
+      "anh": "/img/quan2.jpeg",
+      "gia": "299000",
+      "tenDanhMuc": "DM03"
+    },
+    {
+      "id": "SP05",
+      "ten": "Áo Phông 08",
+      "anh": "/img/aophong4.jpeg",
+      "gia": "399000",
+      "tenDanhMuc": "DM02"
+    },
+    {
+      "id": "SP04",
+      "ten": "Quần Short 02",
+      "anh": "/img/quan.jpeg",
+      "gia": "255000",
+      "tenDanhMuc": "DM03"
+    },
+    {
+      "id": "SP019",
+      "ten": "Quần Short 03",
+      "anh": "/img/quan3.jpeg",
+      "gia": "355000",
+      "tenDanhMuc": "DM03"
+    },
+    {
+      "id": "SP020",
+      "ten": "Quần Short 04",
+      "anh": "/img/quan3.webp",
+      "gia": "299000",
+      "tenDanhMuc": "DM03"
+    },
+    {
+      "id": "SP021",
+      "ten": "Quần Short 05",
+      "anh": "/img/quan4.webp",
+      "gia": "155000",
+      "tenDanhMuc": "DM03"
+    },
+    {
+      "id": "SP022",
+      "ten": "Quần Short 06",
+      "anh": "/img/quan5.webp",
+      "gia": "199000",
+      "tenDanhMuc": "DM03"
+    },
+    {
+      "id": "SP023",
+      "ten": "Quần Short 07",
+      "anh": "/img/quan6.webp",
+      "gia": "355000",
+      "tenDanhMuc": "DM03"
+    },
+    {
+      "id": "SP024",
+      "ten": "Quần Short 08",
+      "anh": "/img/quan7.webp",
+      "gia": "255000",
+      "tenDanhMuc": "DM03"
+    }
+  ],
+  "don-hang": [
+    {
+      "id": "SP03",
+      "tenKH": "Trần Văn Cường",
+      "email": "tvcuong@gmail.com",
+      "sdt": "0923423434",
+      "diaChi": "Xóm 1, Đồng Nhân, Đông La, Hoài Đức, Hà Nội",
+      "ghiChu": "chất lượng. giao nhanh nha shop",
+      "ten": "Quần Short",
+      "soLuong": 2,
+      "tongTien": "498000",
+      "anh": "/img/quan2.jpeg",
+      "gia": "299000",
+      "trangThai": "Đang lấy hàng"
+    },
+    {
+      "id": "SP06",
+      "tenKH": "ádasdas",
+      "email": "cuong@gmail.com",
+      "sdt": "0012312312",
+      "diaChi": "Xóm 1, Đồng Nhân, Đông La, Hoài Đức, Hà Nội",
+      "ghiChu": "ádasdas",
+      "tongTien": 200000,
+      "ten": "Áo sơ mi 02",
+      "soLuong": 1,
+      "anh": "/img/20220614_pITz9mIphZVmIyrEYkVnfAyb.jpg",
+      "gia": "200000",
+      "trangThai": "Giao hàng thành công"
+    }
+  ],
+  "gio-hang": [
+    {
+      "id": "SP024",
+      "ten": "Quần Short 08",
+      "anh": "/img/quan7.webp",
+      "soLuong": "2",
+      "gia": "255000",
+      "tenDanhMuc": "DM03"
+    },
+    {
+      "id": "SP06",
+      "ten": "Áo sơ mi 02",
+      "gia": "200000",
+      "anh": "/img/20220614_pITz9mIphZVmIyrEYkVnfAyb.jpg",
+      "soLuong": 1
+    },
+    {
+      "id": "SP06",
+      "ten": "Áo sơ mi 02",
+      "gia": "200000",
+      "anh": "/img/20220614_pITz9mIphZVmIyrEYkVnfAyb.jpg",
+      "soLuong": 4
+    }
+  ]
+}

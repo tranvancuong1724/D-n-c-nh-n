@@ -1,0 +1,51 @@
+
+<body ng-app="myApp">
+
+    <div class="container mt-4" style="min-height: calc(100vh - 290px); max-width: 1000px;" ng-controller="gioHangProductCtrl">
+        <div class="container mt-3">
+            <!-- Khu vực tiêu đề trang -->
+            <h3 class="text-center">GIỎ HÀNG</h3>
+
+            <!-- Khu vực button điều hướng -->
+            <div class="d-flex justify-content-end">
+                <!-- <a href="#!/view/thanhToan" class=" btn btn-success">Thanh toán</a> -->
+            </div>
+            <table class="table table-bordered mt-3">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Ảnh</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Số Lượng</th>
+                        <th>Giá</th>                        
+                        <th>Tương tác</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="item in gioHang track by $index">
+                        <td>{{item.id}}</td>
+                        <td>
+                            <div style="height: 60px; width: 60px;" class="border rounded bg-light overflow-hidden 
+                                 d-flex justify-content-center align-items-center">
+                                <img class="mh-100 mw-100" ng-src="{{ item.anh }}" alt="">
+                            </div>
+                        </td>
+                        <td>{{item.ten}}</td>
+                        <td>
+                            <input type="number" value="{{item.soLuong}}"  min="1" max="10" class="border-1" style="width: 40px;" 
+                                ng-model="item.soLuong" ng-change="tinhTong()">
+                        </td>
+                        <td>{{item.gia * item.soLuong}} VNĐ</td>
+                        <td style="width: 1px;" class="text-nowrap">
+                            <a href="#!/view/thanhToan/{{item.id}}" class=" btn btn-success">Thanh toán</a>
+                            <button class="btn btn-danger" ng-click="xoaSanPham(item.id)">Xóa</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    </div>
+
+</body>
